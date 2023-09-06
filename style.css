@@ -1,0 +1,110 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+
+.d-inline-block{
+    margin-left: 60px;
+    height: 60px;
+    padding-bottom: 10px;
+}
+
+.adypulg{
+   height: 40px;
+   margin-bottom: 10px;
+}
+
+.p-2{
+    border-radius: 23px;
+    border:none;
+    outline: none;
+    padding: 20px;
+    box-shadow: -1px -1px 25px black;
+}
+
+.table{
+    border: black solid 3px;
+}
+
+.table thead{
+    border: black solid 3px;
+}
+
+.table thead tr th{
+    color: black;
+    font-size: 17px;
+}
+
+h4{
+    color: rgb(119, 115, 115);
+    padding-bottom: 25px;
+}
+
+.w-75 i {
+    position: absolute;
+}
+  
+.w-75 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 13px;
+    min-width: 40px;
+    margin-left: 10px;
+    color: black;
+}
+
+.p-2 {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.bgadypu{
+    height: 50px;
+}
+
+.gdscfoot{
+    height: 50px;
+    margin-left: 5px;
+}
+
+.mb-4{
+    margin-top: 10px;
+}
+
+.navbar{   
+    box-shadow: -1px -1px 25px black;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+.study{
+    color: rgb(233, 67, 53);
+}
+
+.jams{
+    color: rgb(255, 191, 0);
+}
+
+.num23{
+    color: rgb(60, 117, 232);
+}
+
+.sym-{
+    color: rgb(253, 187, 5);
+}
+
+.num24{
+    color: rgb(52, 168, 87);
+}
