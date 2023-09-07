@@ -21,12 +21,11 @@ const updateData = async (filter) => {
   let html = "";
   data.forEach((d, i) => {
     total_started += d["Redemption Status"] === "Yes" ? 1 : 0;
-    html += `
-                      <tr>
-                        <th>${i + 1}</th>
-                        <td><a href="${
-                          d["Google Cloud Skills Boost Profile URL"]
-                        }" target="_blank" style="color:#000000;">${
+    html += `<tr>
+                <th>${i + 1}</th>
+                <td><a href="${
+                  d["Google Cloud Skills Boost Profile URL"]
+                }" target="_blank" style="color:black;">${
       d["Student Name"]
     }</a></td>
                         <td>${
@@ -40,6 +39,7 @@ const updateData = async (filter) => {
   });
   document.getElementById("gccp_body").innerHTML = html;
 };
+
 updateData("");
 const input = document.getElementById("input");
 input.addEventListener("input", () => {
