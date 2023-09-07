@@ -2,38 +2,7 @@
 <html lang="en">
   <head>
     <!-- Primary Meta Tags -->
-    <title>GDSC ADYPU GCCP Leaderboard</title>
-    <meta name="title" content="GDSC ADYPU GCCP Leaderboard" />
-    <meta
-      name="description"
-      content="Official Website of GDSC-ADYPU. GDSCs are a university-based community group for students interested in Google developer technologies. "
-    />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://adypugdsc.github.io" />
-    <meta property="og:title" content="GDSC ADYPU GCCP Leaderboard" />
-    <meta
-      property="og:description"
-      content="Official Website of GDSC-ADYPU. GDSCs are a university-based community group for students interested in Google developer technologies. "
-    />
-    <meta
-      property="og:image"
-      content="{% static 'image/gdsc-adypu-banner.jpeg' %}"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://adypugdsc.github.io" />
-    <meta property="twitter:title" content="GDSC ADYPU GCCP Leaderboard" />
-    <meta
-      property="twitter:description"
-      content="Official Website of GDSC-ADYPU. GDSCs are a university-based community group for students interested in Google developer technologies. "
-    />
-    <meta
-      property="twitter:image"
-      content="{% static 'image/gdsc-adypu-banner.jpeg' %}"
-    />
+    <title>GDSCxTEC GCSJ Leaderboard</title>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -70,16 +39,19 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a href="https://gdsc.community.dev" style="display: flex;">
+        <a href="https://gdsc.community.dev" style="display: flex">
           <img
             src="/assets/gdsc-logo.png"
             alt=""
             class="d-inline-block align-text-top"
           />
-          <h5 style="color: rgb(166, 165, 165); margin-top: 13px;">Google Developer Students Club</h5>
+          <h5 style="color: rgb(166, 165, 165); margin-top: 13px">
+            Google Developer Students Club
+          </h5>
         </a>
       </div>
     </nav>
+
     <div
       class="container"
       style="
@@ -105,7 +77,13 @@
 
         <div class="custom-menu__right w-75 mx-auto">
           <i class="fa-solid fa-magnifying-glass icon"></i>
-          <input id="input" class="p-2 w-100" type="text" id="gccp_search" />
+          <input
+            id="input"
+            class="p-2 input-box"
+            type="text"
+            id="gccp_search"
+            placeholder="Search your name"
+          />
         </div>
       </div>
       <table class="table table-hover fa-border">
@@ -173,14 +151,12 @@
         class="text-center text-dark p-3"
         style="background-color: rgba(0, 0, 0, 0.2)"
       >
-        <a
-          class="text-dark"
-          href="https://github.com"
-          target="_blank"
+        <a class="text-dark" href="https://github.com" target="_blank"
           >&copy; GDSCxTEC Team</a
         >
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@ function compare(a, b) {
   }
   return 0;
 }
+
 const updateData = async (filter) => {
   let data = await (await fetch("./data.json")).json();
   let total_started = 0;
