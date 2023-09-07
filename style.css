@@ -1,21 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-*{
+:root {
+    --header-background: rgb(233, 67, 53); /* Red for header background */
+    --jams: rgb(255, 191, 0);         /* Yellow for jams */
+    --blue23: rgb(60, 117, 232);          /* Blue for blue23 */
+    --num24: rgb(52, 168, 87);          /* Green for num24 */
+}
+
+/* Import Google Fonts and set default styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+
+* {
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-
-
-
-
-/*Navbar*/
-.navbar{   
-    box-shadow: 0px 0px 6px eaf1fb;
+/* Navbar styles */
+.navbar {   
+    box-shadow: none; 
     position: fixed;
     top: 0%;
     left: 0%;
@@ -23,54 +29,49 @@
     z-index: 1;
 }
 
-
-/* Google Cloud Study Jam's name */
-
-/* Search Bar */
-.input-box{
+/* Search Bar styles */
+.input-box {
     width: 65%;
     padding: 10px;
     text-align: center;
     margin-bottom: 3px;
     border-radius: 24px;
-    border:none;
+    border: none;
     outline: none;
     padding: 20px;
-    background-color: #eaf1fb;
-    box-shadow: 0px 6px 10px -9px black ;
+     /* Use the descriptive color variable */
+    box-shadow: 0px 6px 10px -9px black;
 }
 
-/* Table */
+/* Table styles */
 
-/* Footer */
+/* Footer styles */
 
-.d-inline-block{
+.d-inline-block {
     margin-left: 60px;
     height: 60px;
     padding-bottom: 10px;
 }
 
-.adypulg{
-   height: 40px;
-   margin-bottom: 10px;
+.adypulg {
+    height: 40px;
+    margin-bottom: 10px;
 }
 
-
-
-.table{
+.table {
     border: black solid 3px;
 }
 
-.table thead{
+.table thead {
     border: black solid 3px;
 }
 
-.table thead tr th{
+.table thead tr th {
     color: black;
     font-size: 17px;
 }
 
-h4{
+h4 {
     color: rgb(119, 115, 115);
     padding-bottom: 25px;
 }
@@ -78,17 +79,17 @@ h4{
 .w-75 i {
     position: absolute;
 }
-  
+
 .w-75 {
     width: 100%;
     margin-bottom: 10px;
 }
-  
+
 .icon {
     padding: 13px;
     min-width: 40px;
     margin-left: 10px;
-    color: black;
+    color: var(--header-background); /* Use the descriptive color variable */
 }
 
 /* .p-2 {
@@ -98,37 +99,36 @@ h4{
     margin-bottom: 3px;
 } */
 
-.bgadypu{
+.bgadypu {
     height: 50px;
 }
 
-.gdscfoot{
+.gdscfoot {
     height: 50px;
     margin-left: 5px;
 }
 
-.mb-4{
+.mb-4 {
     margin-top: 10px;
 }
 
-
-
-.study{
-    color: rgb(233, 67, 53);
+/* Apply color variables to specific elements */
+.study {
+    color: var(--header-background); /* Use the descriptive color variable */
 }
 
-.jams{
-    color: rgb(255, 191, 0);
+.jams {
+    color: var(--jams); /* Use the descriptive color variable */
 }
 
-.num23{
-    color: rgb(60, 117, 232);
+.num23 {
+    color: var(--blue23); /* Use the descriptive color variable */
 }
 
-.sym-{
-    color: rgb(253, 187, 5);
+.sym- {
+    color: var(--jams); /* Use the descriptive color variable */
 }
 
-.num24{
-    color: rgb(52, 168, 87);
+.num24 {
+    color: var(--num24); /* Use the descriptive color variable */
 }
