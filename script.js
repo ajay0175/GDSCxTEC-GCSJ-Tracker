@@ -32,6 +32,7 @@ const updateData = async (filter) => {
                           d["Redemption Status"] === "Yes" ? "✅" : "⚠️"
                         }</td>
                         <td>${d["# of Courses Completed"]}</td>
+                        <td>${d["# of Skill Badges Completed"]}</td>
                         <td>${d["# of GenAI Game Completed"]}</td>
                         <td>${d["Total Completions of both Pathways"]}</td>
                    </tr>
