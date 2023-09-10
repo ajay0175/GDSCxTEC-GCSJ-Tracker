@@ -147,6 +147,11 @@ h4 {
 }
 
 /* Table styles */
+
+.table-card {
+  overflow-x: auto;
+}
+
 .table-box {
   border: black solid 2px;
   margin: 3rem auto;
@@ -396,6 +401,44 @@ tr {
 
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 400px) {
+  .navbar .logo img {
+    width: 90%;
+    padding-left: 2rem;
+    margin-left: 0.3rem;
+  }
+  .main-content {
+    padding: 3rem 1rem;
+  }
+
+  .main-content .GCSJ-title {
+    margin: 1rem;
+  }
+
+  .main-content .GCSJ-title img {
+    width: 15%;
+    margin-bottom: 3rem;
+  }
+
+  .main-content .GCSJ-title .GCSJ-text {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-content .GCSJ-title .GCSJ-text h4 {
+    font-size: 1.3rem;
+    padding: 0px 2px;
+  }
+
+  .main-content .GCSJ-title .GCSJ-text h4:nth-child(7) {
+    padding-right: 2rem;
+  }
+
+  tbody, td, tfoot, th, thead, tr {
+    padding: 1rem 0.2rem;
+}
+}
 
 @media (max-height: 600px) {
   footer {
