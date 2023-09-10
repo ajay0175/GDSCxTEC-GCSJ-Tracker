@@ -148,32 +148,32 @@ h4 {
 
 /* Table styles */
 
-.table-card {
+#table-card {
   overflow-x: auto;
 }
 
-.table-box {
+#table-box {
   border: black solid 2px;
   margin: 3rem auto;
   width: 100%;
   background-color: rgb(248, 248, 248);
 }
 
-.table-box thead {
+#table-box thead {
   border: black solid 2px;
 }
 
-.table-box tr {
+#table-box tr {
   border-bottom: 1px solid black;
   text-align: center;
 }
 
-.table-box thead tr th {
+#table-box thead tr th {
   color: black;
   font-size: 1rem;
 }
 
-.table-box #gccp-body tr {
+#table-box #gccp-body tr {
   padding: 2rem 1rem;
 }
 
