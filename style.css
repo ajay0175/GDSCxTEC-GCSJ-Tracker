@@ -148,7 +148,7 @@ h4 {
 
 /* Table styles */
 
-#table-card {
+.table-card {
   overflow-x: auto;
 }
 
