@@ -173,6 +173,10 @@ h4 {
   font-size: 1rem;
 }
 
+.table-box thead tr th b {
+  cursor: pointer;
+}
+
 .table-box #gccp-body tr {
   padding: 2rem 1rem;
 }
@@ -347,7 +351,7 @@ tr {
 }
 
 .footer-center i:hover {
-  color: blue;
+  color: var(--gblue);
 }
 
 /* Hovering effect for footer-center links */
@@ -356,16 +360,6 @@ tr {
   font-size: 14px;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.footer-center a:hover {
-  color: blue;
-}
-
-/* Hovering effect for footer links */
-.footer-distributed .footer-links a:hover {
-  color: blue;
-  text-decoration: underline;
 }
 
 /* Animation for footer company name */
@@ -397,6 +391,7 @@ tr {
 
 .footer-distributed .footer-icons a:hover {
   transform: scale(1.2);
+  color: var(--white);
 }
 
 /* Here is the code for Responsive Footer */
