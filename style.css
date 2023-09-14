@@ -110,17 +110,17 @@ h4 {
 
 .search-box i {
   position: absolute;
-  top: 1rem;
+  top: 0.8rem;
   left: 10.4rem;
 }
 
 .input-box {
   width: 65%;
-  padding: 10px;
+  padding: 0.625rem;
   text-align: center;
   margin: auto;
-  margin-bottom: 3px;
-  border-radius: 24px;
+  margin-bottom: 0.188;
+  border-radius: 1.5rem;
   border: none;
   background-color: var(--lightblue);
   box-shadow: 0px 6px 10px -9px black;
@@ -225,9 +225,9 @@ tr {
 /* The company logo */
 
 .footer-distributed .footer-left img {
-  width: 25%;
+  width: 20%;
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 .footer-distributed h3 span {
@@ -370,10 +370,12 @@ tr {
 }
 
 @keyframes blink {
+
   0%,
   100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
@@ -397,12 +399,32 @@ tr {
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+
+  .search-box i{
+    left:2rem;
+  }
+  .input-box {
+    width: 100%;
+  }
+
+  .main-content .search-box {
+    width: 80%;
+  }
+
+  .alert-slider {
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+
   .navbar .logo img {
     width: 90%;
     padding-left: 2rem;
     margin-left: 0.3rem;
   }
+
+  
+
   .main-content {
     padding: 3rem 1rem;
   }
@@ -430,27 +452,40 @@ tr {
     padding-right: 2rem;
   }
 
-  tbody, td, tfoot, th, thead, tr {
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  tr {
     padding: 1rem 0.2rem;
-}
+  }
+
+  .footer-distributed .footer-left img {
+    width: 25%;
+    margin-block: 1rem;
+    margin-inline: 0;
 }
 
-@media (max-height: 600px) {
   footer {
     position: static;
   }
+
   header {
     padding-top: 40px;
   }
 }
 
+
+
 @media (max-width: 880px) {
+
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
     display: block;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
     text-align: center;
   }
 
