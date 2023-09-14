@@ -110,7 +110,7 @@ h4 {
 
 .search-box i {
   position: absolute;
-  top: 0.8rem;
+  top: 0.9rem;
   left: 10.4rem;
 }
 
@@ -370,7 +370,6 @@ tr {
 }
 
 @keyframes blink {
-
   0%,
   100% {
     opacity: 1;
@@ -400,33 +399,32 @@ tr {
 /* You can remove below code if you don't want Footer to be responsive */
 
 @media (max-width: 600px) {
-
-  .search-box i{
-    left:2rem;
-  }
-  .input-box {
-    width: 100%;
-  }
-
-  .main-content .search-box {
-    width: 80%;
-  }
-
-  .alert-slider {
-    width: 100%;
-    border-radius: 0.3rem;
-  }
-
   .navbar .logo img {
     width: 90%;
     padding-left: 2rem;
     margin-left: 0.3rem;
   }
 
-  
-
   .main-content {
     padding: 3rem 1rem;
+  }
+
+  .main-content .search-box {
+    width: 80%;
+  }
+
+  .main-content .search-box i {
+    top: 0.9rem;
+    left: 1.4rem;
+  }
+
+  .main-content .input-box {
+    width: 100%;
+  }
+
+  .main-content .alert-slider {
+    width: 100%;
+    border-radius: 0.3rem;
   }
 
   .main-content .GCSJ-title {
@@ -461,25 +459,23 @@ tr {
     padding: 1rem 0.2rem;
   }
 
-  .footer-distributed .footer-left img {
-    width: 25%;
-    margin-block: 1rem;
-    margin-inline: 0;
-}
-
   footer {
     position: static;
   }
 
-  header {
-    padding-top: 40px;
+  .footer-distributed .footer-left img {
+    width: 30%;
+    margin: auto;
+  }
+
+  .footer-distributed h3 span {
+    margin: auto;
+    font-size: 2rem;
+    letter-spacing: 2px;
   }
 }
 
-
-
 @media (max-width: 880px) {
-
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
@@ -489,7 +485,22 @@ tr {
     text-align: center;
   }
 
+  .footer-distributed .footer-center .college-address {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer-distributed .footer-center .gdsc-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .footer-distributed .footer-center i {
     margin-left: 0;
+  }
+
+  .footer-distributed .footer-center p a{
+    font-size: 1.1rem;
   }
 }
