@@ -110,7 +110,7 @@ h4 {
 
 .search-box i {
   position: absolute;
-  top: 1rem;
+  top: 0.8rem;
   left: 10.4rem;
 }
 
@@ -227,7 +227,7 @@ tr {
 .footer-distributed .footer-left img {
   width: 20%;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .footer-distributed h3 span {
@@ -401,6 +401,9 @@ tr {
 
 @media (max-width: 600px) {
 
+  .search-box i{
+    left:2rem;
+  }
   .input-box {
     width: 100%;
   }
