@@ -414,7 +414,7 @@ tr {
 
   .alert-slider {
     width: 100%;
-    border-radius: 0rem;
+    border-radius: 0.3rem;
   }
 
   .navbar .logo img {
