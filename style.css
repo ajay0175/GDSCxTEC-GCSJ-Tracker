@@ -227,34 +227,13 @@ tr {
 .footer-distributed .footer-left img {
   width: 20%;
   align-items: center;
-  margin-left: 1.5rem;
+  margin-left: 3.2rem;
 }
 
 .footer-distributed h3 span {
   margin-left: 0.7rem;
   color: #e0ac1c;
   letter-spacing: 2px;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links {
-  color: var(--white);
-  margin: 20px 0 12px;
-}
-
-.footer-distributed .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer-distributed .footer-company-name {
-  color: #8f9296;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
 }
 
 /* Footer Center */
@@ -298,6 +277,7 @@ tr {
 .footer-distributed .footer-center p a {
   color: #e0ac1c;
   text-decoration: none;
+  font-size: 1.25rem;
 }
 
 /* Footer Right */
