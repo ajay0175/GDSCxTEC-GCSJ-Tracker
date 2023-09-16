@@ -166,6 +166,7 @@ h4 {
 .table-box tr {
   border-bottom: 1px solid black;
   text-align: center;
+  color: black;
 }
 
 .table-box thead tr th {

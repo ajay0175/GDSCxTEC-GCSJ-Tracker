@@ -10,33 +10,54 @@ function compare(a, b) {
 
 const updateData = async (filter) => {
   let data = await (await fetch("./data.json")).json();
-  let total_started = 0;
   if (filter !== "") {
     data = data.filter((el) => {
       return el["Student Name"].toLowerCase().includes(filter.toLowerCase());
     });
   }
+
   data.sort(compare);
-  let total_reg = data.length;
+
   let html = "";
   data.forEach((d, i) => {
-    total_started += d["Redemption Status"] === "Yes" ? 1 : 0;
-    html += `<tr>
-                <th>${i + 1}</th>
-                <td><a href="${
-                  d["Google Cloud Skills Boost Profile URL"]
-                }" target="_blank" style="color:black;">${
-      d["Student Name"]
-    }</a></td>
-                        <td>${
-                          d["Redemption Status"] === "Yes" ? "✅" : "⚠️"
-                        }</td>
-                        <td>${d["# of GenAI Game Completed"] === "1" ? "💯" : "❌"}</td>
-                        <td>${d["# of Skill Badges Completed"]}</td> 
-                        <td>${d["# of Courses Completed"]}</td>
-                        <td>${d["Total Completions of both Pathways"]}</td>
-                   </tr>
-                      `;
+    // Check if Total Completions of both Pathways is "Yes"
+    const rowBackgroundColor =
+      d["Total Completions of both Pathways"] === "Yes" ? "#9CFF2E" : "";
+
+    // Check if Redemption Status is "No"
+    const redemptionStatusBackgroundColor =
+      d["Redemption Status"] === "No" ? "#FF5D5D" : "";
+
+    html += `<tr style="background-color: ${rowBackgroundColor};">
+                  <th style="background-color: ${redemptionStatusBackgroundColor};">${
+      i + 1
+    }</th>
+
+                  <td style="background-color: ${redemptionStatusBackgroundColor};"><a href="${
+      d["Google Cloud Skills Boost Profile URL"]
+    }" target="_blank" style="color:black;">${d["Student Name"]}</a></td>
+
+                  <td style="background-color: ${redemptionStatusBackgroundColor};">${
+      d["Redemption Status"] === "Yes" ? "✅" : "⚠️"
+    }</td>
+
+                  <td style="background-color: ${redemptionStatusBackgroundColor};">${
+      d["# of GenAI Game Completed"] === "1" ? "💯" : "❌"
+    }</td>
+
+                  <td style="background-color: ${redemptionStatusBackgroundColor};">${
+      d["# of Skill Badges Completed"]
+    }</td> 
+                        
+                  <td style="background-color: ${redemptionStatusBackgroundColor};">${
+      d["# of Courses Completed"]
+    }</td>
+                          
+                  <td style="background-color: ${redemptionStatusBackgroundColor};">${
+      d["Total Completions of both Pathways"]
+    }</td>
+                   
+    </tr>`;
   });
   document.getElementById("gccp_body").innerHTML = html;
 };
