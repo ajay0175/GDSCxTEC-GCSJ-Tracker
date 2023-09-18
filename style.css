@@ -108,18 +108,18 @@ h4 {
   margin: 1.5rem auto;
 }
 
-.search-box i {
+ .main-content .search-box i {
   position: absolute;
   top: 0.9rem;
   left: 10.4rem;
 }
 
-.input-box {
+.main-content .input-box {
   width: 65%;
   padding: 0.625rem;
   text-align: center;
   margin: auto;
-  margin-bottom: 0.188;
+  margin-bottom: 0.388rem;
   border-radius: 1.5rem;
   border: none;
   background-color: var(--lightblue);
@@ -127,12 +127,12 @@ h4 {
   transition: 0.5s;
 }
 
-.input-box:focus {
+.main-content .input-box:focus {
   outline: none;
   background-color: var(--white);
 }
 
-.alert-slider {
+.main-content .alert-slider {
   width: 70%;
   margin: auto;
   margin-bottom: 2rem;
@@ -141,9 +141,51 @@ h4 {
   border-radius: 2rem;
 }
 
-.alert-slider marquee {
+.main-content .alert-slider marquee {
   padding-top: 0.6rem;
   font-size: 1.2rem;
+}
+
+/* progress bar */
+
+.main-content .progress-box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .progress-box h6 {
+  width: 78%;
+  text-align: center;
+  margin: 0.7rem auto;
+  font-size: 1.155rem;
+}
+
+.main-content .progress-box .progress {
+  background-color: white;
+  border: 3px solid var(--green);
+  border-radius: 1rem;
+  height: 2.5rem;
+  width: 75%;
+  margin: auto;
+}
+
+.main-content .progress-box .progress .progress-bar {
+  background-image: repeating-linear-gradient(to right, var(--green), green);
+  border-top-right-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  height: 100%;
+  width: 0%;
+  transition: 1s ease;
+}
+
+.main-content .progress-box .progress-bar-details {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  padding: 0px 6px;
 }
 
 /* Table styles */
@@ -223,7 +265,7 @@ tr {
   margin: -40;
 }
 
-/* The company logo */
+/* Footer company logo */
 
 .footer-distributed .footer-left img {
   width: 20%;
@@ -254,6 +296,12 @@ tr {
   line-height: 42px;
   margin: 10px 15px;
   vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+/* Hovering effect for footer-center icons */
+.footer-center i:hover {
+  color: var(--gblue);
 }
 
 .footer-distributed .footer-center i.fa-envelope {
@@ -287,7 +335,7 @@ tr {
   width: 30%;
 }
 
-.footer-distributed .footer-company-about {
+.footer-distributed .footer-right .footer-company-about {
   line-height: 20px;
   color: #cccccd;
   font-size: 13px;
@@ -295,7 +343,7 @@ tr {
   margin: 0;
 }
 
-.footer-distributed .footer-company-about span {
+.footer-distributed .footer-right .footer-company-about span {
   display: block;
   color: var(--white);
   font-size: 18px;
@@ -303,81 +351,82 @@ tr {
   margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons {
+.footer-distributed .footer-right .footer-icons {
   margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a {
+.footer-distributed .footer-right .footer-icons a {
   display: inline-block;
   width: 35px;
   height: 35px;
   cursor: pointer;
   background-color: #33383b;
-  border-radius: 2px;
-
+  color: #888;
+  border-radius: 5px;
   font-size: 20px;
-  color: var(--white);
   text-align: center;
   line-height: 35px;
-
   margin-right: 3px;
   margin-bottom: 5px;
-}
-
-/* Hovering effect for footer-center icons */
-.footer-center i {
-  color: #888;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.footer-center i:hover {
-  color: var(--gblue);
-}
-
-/* Hovering effect for footer-center links */
-.footer-center a {
-  color: #888;
-  font-size: 14px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-/* Animation for footer company name */
-.footer-distributed .footer-company-name {
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-/* Hovering effect for footer icons */
-.footer-distributed .footer-icons a {
-  display: inline-block;
-  margin: 0 5px;
-  color: #888;
-  font-size: 18px;
-  transform: scale(1);
   transition: transform 0.3s ease;
 }
 
-.footer-distributed .footer-icons a:hover {
+/* Hovering effect for footer icons */
+
+.footer-distributed .footer-right .footer-icons a:hover {
   transform: scale(1.2);
   color: var(--white);
 }
 
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
+/* Here is the code for Responsive*/
+
+@media (max-width: 880px) {
+  .navbar .logo img {
+    width: 55%;
+    margin-top: 0.3rem;
+    padding-left: 3rem;
+  }
+
+  .main-content .search-box i {
+    left: 5.6rem;
+  }
+
+  .main-content .alert-slider {
+    width: 81%;
+  }
+
+  .main-content {
+    padding: 3rem 2rem;
+}
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center .college-address {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer-distributed .footer-center .gdsc-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+  .footer-distributed .footer-center p a {
+    font-size: 1.1rem;
+  }
+}
 
 @media (max-width: 600px) {
   .navbar .logo img {
@@ -431,13 +480,21 @@ tr {
     padding-right: 2rem;
   }
 
-  tbody,
+  .progress-box {
+    width: 100%;
+  }
+
+  .table-box thead tr th {
+    padding: 0 8px;
+  }
+
+  .table-box tbody,
   td,
   tfoot,
   th,
   thead,
   tr {
-    padding: 1rem 0.2rem;
+    padding: 0.5rem 0.5rem;
   }
 
   footer {
@@ -453,35 +510,5 @@ tr {
     margin: auto;
     font-size: 2rem;
     letter-spacing: 2px;
-  }
-}
-
-@media (max-width: 880px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center .college-address {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .footer-distributed .footer-center .gdsc-mail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-distributed .footer-center i {
-    margin-left: 0;
-  }
-
-  .footer-distributed .footer-center p a{
-    font-size: 1.1rem;
   }
 }
