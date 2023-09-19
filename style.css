@@ -287,11 +287,11 @@ tr {
 
 .footer-distributed .footer-center i {
   background-color: #33383b;
-  color: var(--white);
+  color: var(--grey);
   font-size: 25px;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 5px;
   text-align: center;
   line-height: 42px;
   margin: 10px 15px;
@@ -301,7 +301,7 @@ tr {
 
 /* Hovering effect for footer-center icons */
 .footer-center i:hover {
-  color: var(--gblue);
+  color: var(--white);
 }
 
 .footer-distributed .footer-center i.fa-envelope {
@@ -361,7 +361,7 @@ tr {
   height: 35px;
   cursor: pointer;
   background-color: #33383b;
-  color: #888;
+  color: var(--grey);
   border-radius: 5px;
   font-size: 20px;
   text-align: center;

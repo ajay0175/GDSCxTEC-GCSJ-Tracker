@@ -80,13 +80,9 @@ const updateData = async (filter) => {
     </tr>`;
   });
   console.log("Total Completions of both Pathways:", totalCompletionsYesCount);
+  changeWidth();
   document.getElementById("gccp_body").innerHTML = html;
 };
-
-window.addEventListener("load", () => {
-  // Call the changeWidth function to update the progress bar width
-  changeWidth();
-});
 
 updateData("");
 const input = document.getElementById("input");
