@@ -410,7 +410,8 @@ tr {
 
   .footer-distributed .footer-center .college-address {
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-distributed .footer-center .gdsc-mail {
