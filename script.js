@@ -21,12 +21,13 @@ function changeWidth() {
 }
 
 function compare(a, b) {
-  if (a["# of Courses Completed"] > b["# of Courses Completed"]) {
+  if (a["Total Completions of both Pathways"] > b["Total Completions of both Pathways"]) {
     return -1;
-  }
-  if (a["# of Courses Completed"] < b["# of Courses Completed"]) {
+  } 
+  else if (a["Total Completions of both Pathways"] < b["Total Completions of both Pathways"]) {
     return 1;
   }
+  
   return 0;
 }
 
