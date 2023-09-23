@@ -268,15 +268,17 @@ tr {
 /* Footer company logo */
 
 .footer-distributed .footer-left img {
-  width: 20%;
+  width: 23%;
   align-items: center;
-  margin-left: 3.2rem;
+  margin-left: 3.5rem;
 }
 
-.footer-distributed h3 span {
+.footer-distributed .footer-left h3 {
   margin-left: 0.7rem;
   color: #e0ac1c;
   letter-spacing: 2px;
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 
 /* Footer Center */
@@ -378,6 +380,16 @@ tr {
   color: var(--white);
 }
 
+.footer-distributed hr {
+  border: 1px solid var(--gwhite);
+}
+
+.footer-distributed .copyright p {
+  margin-top: 2rem;
+  color: var(--white);
+  text-align: center;
+}
+
 /* Here is the code for Responsive*/
 
 @media (max-width: 880px) {
@@ -399,19 +411,37 @@ tr {
     padding: 3rem 2rem;
 }
 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
+  .footer-distributed .footer-left {
     width: 100%;
     margin-bottom: 2rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .footer-distributed .footer-left img {
+    width: 20%;
+    margin-left: 1.2rem;
+  }
+
+  .footer-distributed .footer-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
 
   .footer-distributed .footer-center .college-address {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer-distributed .footer-center .college-address p a {
+    font-size: 1.1rem;
   }
 
   .footer-distributed .footer-center .gdsc-mail {
@@ -424,8 +454,10 @@ tr {
     margin-left: 0;
   }
 
-  .footer-distributed .footer-center p a {
-    font-size: 1.1rem;
+  .footer-distributed .footer-right {
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
   }
 }
 
@@ -505,6 +537,10 @@ tr {
   .footer-distributed .footer-left img {
     width: 30%;
     margin: auto;
+  }
+
+  .footer-distributed .footer-center .college-address p a {
+    font-size: 1.1rem;
   }
 
   .footer-distributed h3 span {
