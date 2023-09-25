@@ -164,7 +164,7 @@ h4 {
 
 .main-content .progress-box .progress {
   background-color: white;
-  border: 3px solid var(--green);
+  border: 3px solid rgb(236, 220, 42);
   border-radius: 1rem;
   height: 2.5rem;
   width: 75%;
@@ -172,7 +172,7 @@ h4 {
 }
 
 .main-content .progress-box .progress .progress-bar {
-  background-image: repeating-linear-gradient(to right, var(--green), green);
+  background-image: repeating-linear-gradient(to right, yellow, var(--gyellow));
   border-top-right-radius: 0.9rem;
   border-bottom-right-radius: 0.9rem;
   height: 100%;

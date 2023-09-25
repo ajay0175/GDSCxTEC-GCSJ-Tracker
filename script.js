@@ -8,7 +8,7 @@ const progressLabelRight = document.querySelector(
   ".progress-box .progress-bar-details .right"
 );
 
-let totalCount = 40;
+let totalCount = 60;
 let totalCompletionsYesCount = 0;
 
 function changeWidth() {
