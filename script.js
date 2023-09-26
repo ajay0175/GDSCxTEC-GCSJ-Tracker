@@ -42,6 +42,7 @@ const updateData = async (filter) => {
   data.sort(compare);
 
   let html = "";
+  totalCompletionsYesCount = 0;
 
   data.forEach((d, i) => {
     // Check if Total Completions of both Pathways is "Yes" and Redemption is "No" then Highlight it
