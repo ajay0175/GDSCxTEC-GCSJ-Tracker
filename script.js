@@ -49,7 +49,7 @@ const updateData = async (filter) => {
     const rowBackgroundColor =
       d["Total Completions of both Pathways"] === "Yes"
         ? "#9CFF2E"
-        : d["Redemption Status"] === "No "
+        : d["Redemption Status"] === "No"
         ? "#FF5D5D"
         : "";
 
@@ -67,7 +67,7 @@ const updateData = async (filter) => {
       d["Student Name"]
     }</a></td>
 
-                  <td>${d["Redemption Status"] === "Yes " ? "✅" : "⚠️"}</td>
+                  <td>${d["Redemption Status"] === "Yes" ? "✅" : "⚠️"}</td>
 
                   <td>${
                     d["# of GenAI Game Completed"] === "1" ? "💯" : "❌"

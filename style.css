@@ -55,8 +55,8 @@ h4 {
 }
 
 .main-content .GCSJ-title img {
-  width: 6%;
-  margin-bottom: 1.3rem;
+  width: 65px;
+  margin-bottom: 16px;
 }
 
 .main-content .GCSJ-title .GCSJ-text {
@@ -102,6 +102,8 @@ h4 {
 
 .main-content .search-box {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
   position: relative;
   width: 65%;
@@ -111,7 +113,7 @@ h4 {
  .main-content .search-box i {
   position: absolute;
   top: 0.9rem;
-  left: 10.4rem;
+  left: 10.7rem;
 }
 
 .main-content .input-box {
@@ -400,7 +402,7 @@ tr {
   }
 
   .main-content .search-box i {
-    left: 5.6rem;
+    left: 6.5rem;
   }
 
   .main-content .alert-slider {
@@ -472,31 +474,13 @@ tr {
     padding: 3rem 1rem;
   }
 
-  .main-content .search-box {
-    width: 80%;
-  }
-
-  .main-content .search-box i {
-    top: 0.9rem;
-    left: 1.4rem;
-  }
-
-  .main-content .input-box {
-    width: 100%;
-  }
-
-  .main-content .alert-slider {
-    width: 100%;
-    border-radius: 0.3rem;
+  .main-content .GCSJ-title img {
+    width: 17%;
+    margin-bottom: 2.3rem;
   }
 
   .main-content .GCSJ-title {
     margin: 1rem;
-  }
-
-  .main-content .GCSJ-title img {
-    width: 15%;
-    margin-bottom: 3rem;
   }
 
   .main-content .GCSJ-title .GCSJ-text {
@@ -513,7 +497,25 @@ tr {
     padding-right: 2rem;
   }
 
-  .progress-box {
+  .main-content .search-box {
+    width: 80%;
+  }
+
+  .main-content .search-box i {
+    top: 0.9rem;
+    left: 1.4rem;
+  }
+
+  .main-content .search-box .input-box {
+    width: 100%;
+  }
+
+  .main-content .alert-slider {
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+
+  .main-content .progress-box {
     width: 100%;
   }
 
