@@ -82,7 +82,7 @@ const updateData = async (filter) => {
     </tr>`;
   });
   // console.log("Total Completions of both Pathways:", totalCompletionsYesCount);
-  // changeWidth();
+  changeWidth();
   document.getElementById("gccp_body").innerHTML = html;
 };
 
